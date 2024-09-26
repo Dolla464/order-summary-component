@@ -14,6 +14,12 @@
   box-sizing: border-box;
 }
 
+main {
+  display: flex;
+  place-items: center;
+  height: 100dvh;
+}
+
 body {
     background-image: url(../images/pattern-background-desktop.svg);
     background-size: contain;
