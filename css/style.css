@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px;
+}
+
+.card {
+    background-color: white;
+    color: var(--desaturated-blue);
+    margin: 50px auto;
+    width: 450px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.title {
+    color: var(--dark-blue);
+    font-size: 32px;
+    font-weight: 900px;
+}
+
+.heroimage {
+    width: 100%;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+
+.container > * {
+    margin: 13px 0;
+}
+
+.orderdescription {
+    line-height: 25px;
+    margin-left: 20px;
+}
+
+.plancontainer {
+    font-size: 16px;
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.plancontainer a {
+    color: var(--bright-blue);
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 14px;
+}
+
+.plancontainer a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+.plancontainer strong {
+    color: var(--dark-blue);
+}
+
+.plantitle {
+    color: black;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.plandescription {
+    line-height: 20px;
+    margin-right: 115px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.proceedbutton {
+    background-color: var(--bright-blue);
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 20px 30px -8px rgb(197, 189, 245);
+}
+
+.proceedbutton:hover {
+    opacity: 0.8;
+}
+
+.cancelbutton {
+    background-color: white;
+    margin-top: 22px;
+    color: var(--desaturated-blue);
+}
+
+.cancelbutton:hover {
+    color: black;
+}
+
+.attribution { 
+    font-size: 15px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media (max-width: 768px) {
+ .card {
+  width: 90%;
+ }
+}
+  
+@media (max-width: 480px) {
+body {
+   background-image: url(./images/pattern-background-mobile.svg);
+    }
+  
+    .hero-image {
+      height: 200px;
+      object-fit: cover;
+    }
+  
+    .container {
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 28px;
+    }
+  
+    .order-description {
+      font-size: 14px;
+    }
+  
+    .plan-container {
+      font-size: 14px;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  
+    .plan-container img {
+      margin-bottom: 20px;
+    }
+  
+    .plan-container .plan-description {
+      margin-right: 0;
+      text-align: center;
+    }
+  
+    button {
+      font-size: 1rem;
+    }
+  }
+
